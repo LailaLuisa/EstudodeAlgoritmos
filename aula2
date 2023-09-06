@@ -1,0 +1,19 @@
+Algoritmo "Algoritmo de Calculo de IMC"
+
+
+Var
+peso,altura, resultado: real
+
+
+Inicio
+
+Escreval("Calculo de IMC")
+Escreva("Informe seu peso: ")
+Leia(peso)
+Escreva("Informe sua altura: ")
+Leia(altura)
+
+resultado <- peso/(altura*altura)
+Escreva ("Seu IMC é: ", resultado)
+
+Fimalgoritmo
