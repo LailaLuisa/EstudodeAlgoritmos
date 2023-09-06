@@ -1,0 +1,16 @@
+Algoritmo "Algoritmo Conversão de Fahrenheit para Celsius"
+
+Var
+tempF, tempC: real
+
+Inicio
+
+Escreva("Informe uma temperatura em Fahrenheit para conversão em graus Celsius: ")
+Leia(tempF)
+
+TempC <- (tempF -32.0) * (5.0/9.0)
+
+Escreva("A conversão de ", tempF, "ºF para Celsius é: ", tempC)
+
+
+Fimalgoritmo
