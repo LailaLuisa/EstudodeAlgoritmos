@@ -1,0 +1,18 @@
+Algoritmo "Algoritmo de soma entre dois números"
+
+Var
+n1, n2, resultado : real
+
+
+Inicio
+
+Escreval ("Algoritmo de soma")
+Escreva ("Digite um número: ")
+Leia(n1)
+Escreva ("Digite mais um número: ")
+Leia(n2)
+
+resultado <- n1+n2
+Escreva ("O resultado da sua soma é", resultado)
+
+Fimalgoritmo
