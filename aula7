@@ -1,0 +1,25 @@
+Algoritmo "Algoritmo de calculo de volume de esfera"
+
+Var
+R, volume: real
+
+Inicio
+
+Escreva("Digite um valor para o raio da esfera: ")
+Leia(R)
+
+volume <- 4/3 * Pi * R^3
+
+Se (volume < 50) entao
+   Escreva("O raio informado é de uma esfera pequena")
+Senao
+   Se (volume < 500) entao
+      Escreva("O raio informado é de uma esfera média")
+   Senao
+        Se (volume >= 500) entao
+           Escreva("O raio informado é de uma esfera grande")
+        fimse
+   fimse
+fimse
+   
+Fimalgoritmo
