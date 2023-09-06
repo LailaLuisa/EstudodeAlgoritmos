@@ -1,0 +1,18 @@
+Algoritmo "Algoritmo de calculo de média entre duas notas"
+
+Var
+n1, n2, media: real
+
+Inicio
+
+Escreval("Cálculo de média de notas")
+Escreva("Informe a primeira nota: ")
+Leia(n1)
+Escreva("Informe a segunda nota: ")
+Leia(n2)
+
+media <- (n1+n2)/2
+
+Escreva("Sua média é: ", media)
+
+Fimalgoritmo
