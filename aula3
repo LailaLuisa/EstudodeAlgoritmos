@@ -1,0 +1,17 @@
+Algoritmo "Algoritmo de indicação de números pares ou impares"
+
+Var
+num: real
+
+Inicio
+
+Escreva("Digite um número: ")
+Leia(num)
+
+Se (num mod 2 = 0) entao
+   Escreva("O número informado é par")
+Senao
+   Escreva("O número informado é impar")
+fimse
+
+Fimalgoritmo
