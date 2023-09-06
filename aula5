@@ -1,0 +1,23 @@
+Algoritmo "Algoritmo media de 2 notas + resultado de aprovação/reprovação"
+
+Var
+n1, n2, media: real
+
+Inicio
+
+Escreval("Cálculo de média de notas")
+Escreva("Informe a primeira nota: ")
+Leia(n1)
+Escreva("Informe a segunda nota: ")
+Leia(n2)
+
+media <- (n1+n2)/2
+
+Se (media>=7) entao
+   Escreva("Sua média é: ", media, ", você está aprovado!")
+Senao
+   Escreva("Sua média é: ", media, ", você está reprovado!")
+fimse
+
+
+Fimalgoritmo
