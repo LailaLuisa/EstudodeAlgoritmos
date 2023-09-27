@@ -1,0 +1,17 @@
+Algoritmo "Algoritmo Enquanto Regressão"
+
+Var
+i: inteiro
+
+
+Inicio
+i <- 10
+
+Enquanto (i >= 1) e (i <= 10) faca
+         escreval (i)
+         i <- i - 1
+Fimenquanto
+
+
+
+Fimalgoritmo
