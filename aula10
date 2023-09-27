@@ -1,0 +1,21 @@
+Algoritmo "Algoritmo Para"
+
+Var
+i: inteiro
+
+
+Inicio
+
+Para i de 10 ate 0 passo -1 faca
+     Se (i = 0) entao
+        escreval(i," número nêutro")
+     senao
+          Se (i mod 2 = 0) entao
+             escreval(i," número par")
+          senao
+             escreval(i," número impar")
+          fimse
+     fimse
+Fimpara
+
+Fimalgoritmo
