@@ -1,0 +1,17 @@
+Algoritmo "Algoritmo Para 1 a 15"
+
+Var
+i: inteiro
+
+
+Inicio
+
+Para i de 1 ate 15 faca
+     Se (i mod 2 = 0) entao
+        escreval(i," número par")
+     senao
+        escreval(i, " número impar")
+     fimse
+FimPara
+
+Fimalgoritmo
