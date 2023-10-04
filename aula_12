@@ -1,0 +1,188 @@
+Algoritmo "Algoritmo Exercicio Complementar"
+
+//procedimentos
+procedimento leitura()
+inicio
+             escreval("Digite o primeiro número: ")
+             leia(n1)
+             escreval("Digite o segundo número: ")
+             leia(n2)
+fimprocedimento
+
+
+procedimento soma()
+inicio
+
+             resultado <- n1+n2
+             escreval("o resultado da soma é: ", resultado)
+fimprocedimento
+
+
+procedimento subtracao()
+inicio
+
+             resultado <- n1-n2
+             escreval("o resultado da subtração é: ", resultado)
+fimprocedimento
+
+
+procedimento divisao()
+inicio
+
+             resultado <- n1/n2
+             escreval("o resultado da divisão é: ", resultado)
+fimprocedimento
+
+
+procedimento multiplicacao()
+inicio
+
+             resultado <- n1*n2
+             escreval("o resultado da multiplicação é: ", resultado)
+fimprocedimento
+
+
+procedimento calculo_IMC()
+inicio
+             escreval("Escreva seu peso: ")
+             leia(peso)
+             escreval("Escreva sua altura: ")
+             leia(altura)
+             imc <- peso/(altura*altura)
+
+
+             Se (imc < 18.5) entao
+                escreval("Seu imc é: ", imc, ", você está abaixo do peso")
+             senao
+                  Se (imc >= 18.5) e (imc < 25.0) entao
+                     escreval("Seu imc é: ", imc, ", você está com o peso adequado")
+                  senao
+
+                      Se (imc >=25.0) e (imc < 30.0) entao
+                         escreval ("Seu imc é: ", imc, ", você está com sobrepeso")
+                      senao
+                           Se (imc >= 30) entao
+                              escreval("Seu imc é: ", imc, ", você está acima do peso adequado")
+                           fimse
+                      fimse
+                  fimse
+              fimse
+             
+fimprocedimento
+
+
+procedimento triangulo()
+inicio
+           escreval("Escreva o valor do primeiro lado: ")
+           leia(ladoA)
+           escreval("Escreva o valor do segundo lado: ")
+           leia(ladoB)
+           escreval("Escreva o valor do terceiro lado: ")
+           leia(ladoC)
+           
+           
+           Se (ladoA + ladoB > ladoC) e (ladoB + ladoC > ladoA) e (ladoC + ladoA > ladoB) entao
+                 escreval("As medidas informadas formam um triângulo!")
+                 
+                 Se (ladoA = ladoB) e (ladoB = ladoC) entao
+                    escreval ("O triângulo formado é o equilátero")
+                 senao
+                    Se (ladoA = ladoB) ou (ladoA = ladoC) ou (ladoB = ladoC) entao
+                       escreval("O triângulo formado é o isóceles")
+                    senao
+                       escreval("O triângulo formado é o escaleno")
+                    fimse
+                 fimse
+
+           senao
+                 escreval("As medidas informadas não formam um triângulo!")
+           fimse
+
+fimprocedimento
+
+
+procedimento setimo()
+inicio
+          Para i de 1 ate 15 faca
+               Se (i mod 2 = 0) entao
+                  escreval(i, " número par")
+               senao
+                  escreval(i, " número impar")
+               fimse
+          fimpara
+
+fimprocedimento
+
+
+procedimento oitavo()
+inicio
+
+i<- 100
+             Enquanto (i>=1) e (i<=100) faca
+                 escreval(i)
+                 i<- i - 1
+             fimenquanto
+
+fimprocedimento
+
+
+procedimento nono()
+inicio
+
+fimprocedimento
+
+//variáveis
+Var
+n1, n2, resultado, peso, altura, imc, menu, ladoA, ladoB, ladoC : real
+
+i: inteiro
+
+
+Inicio
+
+Repita
+      escreval("Digite 1 para somar")
+      escreval("Digite 2 para subtrair")
+      escreval("Digite 3 para dividir")
+      escreval("Digite 4 para multiplicar")
+      escreval("Digite 5 para cálculo de IMC")
+      escreval("Digite 6 para caracterização de triângulo")
+      escreval("Digite 7 para laço de repetição de 1 a 15")
+      escreval("Digite 8 para laço de repetição de 100 a 1")
+      escreval("Digite 9 para limpar menu")
+      escreval("Digite 0 para encerrar aplicação")
+      leia(menu)
+      
+      Escolha menu
+                caso 1
+                     leitura()
+                     soma()
+                caso 2
+                     leitura()
+                     subtracao()
+                caso 3
+                     leitura()
+                     divisao()
+                caso 4
+                     leitura()
+                     multiplicacao()
+                caso 5
+                     calculo_IMC()
+                caso 6
+                     triangulo()
+                caso 7
+                     setimo()
+                caso 8
+                     oitavo()
+                caso 9
+                     limpatela()
+                     escreval("As informações anteriores da tela foram limpas!")
+                caso 0
+                     escreval("Finalizando aplicação")
+                outrocaso
+                     escreval("Opção inválida!")
+      fimescolha
+ate menu = 0
+                
+
+Fimalgoritmo
