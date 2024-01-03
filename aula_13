@@ -1,0 +1,179 @@
+Algoritmo "Algoritmo Quizz"
+
+procedimento calcular(resp:caractere; respcorretaMaiusc:caractere; respcorretaMinusc:caractere)
+inicio
+               Se (resp = respcorretaMaiusc) ou (resp = respcorretaMinusc) entao
+                   escreval("Resposta correta!")
+                   pontos <- pontos + 1
+                senao
+                   escreval("Resposta incorreta.")
+                fimse
+
+fimprocedimento
+
+procedimento esporte()
+inicio
+
+      escreval("Questão 1. Em qual ano o Brasil venceu a copa do mundo pela quinta vez?")
+      escreval("A.2002")
+      escreval("B.2006")
+      escreval("C.2010")
+      leia(resp)
+      
+      calcular(resp,"A","a")
+
+                
+      escreval("Questão 2. Quantas medalhas o Brasil ganhou nas Olímpiadas de 2021?")
+      escreval("A. 17")
+      escreval("B. 19")
+      escreval("C. 21")
+      leia(resp)
+      
+      calcular(resp,"C","c")
+      
+fimprocedimento
+
+procedimento entretenimento()
+inicio
+      escreval("Questão 1. Qual é o filme mais vendido da Marvel atualmente?")
+      escreval("A.Capitã Marvel")
+      escreval("B.Vingadores: Ultimato")
+      escreval("C.Homem Aranha: Sem Volta Para Casa")
+      leia(resp)
+
+      calcular(resp, "B", "b")
+
+      escreval("Questão 2. Quem foi que venceu o BBB 20?")
+      escreval("A. Rafa Kalimann")
+      escreval("B. Camilla de Lucas")
+      escreval("C. Thelma")
+      leia(resp)
+
+      calcular(resp,"C","c")
+      
+fimprocedimento
+
+procedimento historia()
+inicio
+      escreval("Questão 1. Quando acabou a segunda guerra mundial?")
+      escreval("A.1945")
+      escreval("B.1929")
+      escreval("C.1950")
+      leia(resp)
+
+      calcular(resp,"A", "a")
+                
+      escreval("Questão 2. Em qual ano o Brasil foi descoberto?")
+      escreval("A.1420")
+      escreval("B.1500")
+      escreval("C.1540")
+      leia(resp)
+
+      calcular(resp,"B", "b")
+
+fimprocedimento
+
+procedimento ciencias()
+inicio
+      Escreval("Questão 1. Qual o órgão responsável pelo bombeamento de sangue do corpo humano?")
+      escreval("A.Cérebro")
+      escreval("B.Coração")
+      escreval("C.Pulmão")
+      leia(resp)
+
+      calcular(resp,"B", "b")
+                
+      Escreval("Questão 2. Quantos ossos tem o corpo humano?")
+      escreval("A.200")
+      escreval("B.197")
+      escreval("C.206")
+      leia(resp)
+
+      calcular(resp,"C","c")
+      
+fimprocedimento
+
+procedimento literatura()
+inicio
+      Escreval("Questão 1. Quem escreveu o livro Quincas Borba?")
+      escreval("A.Machado de Assis")
+      escreval("B.Allan Kardec")
+      escreval("C.Jose de Alencar")
+      leia(resp)
+
+      calcular(resp,"A","a")
+      
+      escreval("Questão 2. Qual dessas obras pertece ao periodo do Romantismo?")
+      escreval("A.O guarani")
+      escreval("B.Harry Potter e a Pedra filosofal")
+      escreval("C.Crepusculo")
+      leia(resp)
+      
+      calcular(resp,"A","a")
+      
+fimprocedimento
+
+Var
+menu, pontos, i, v1, v2, v3, v4, v5: inteiro
+resp: caractere
+
+
+Inicio
+
+
+pontos <- 0
+Repita
+escreval("Escolha uma opção")
+escreval("1.Esporte")
+escreval("2.Entretenimento")
+escreval("3.História")
+escreval("4.Ciências")
+escreval("5.Literatura")
+escreval("9.Sair")
+leia(menu)
+          Escolha  menu
+                 caso 1
+                      Se (v1 = 1) entao
+                         escreval("Essa opção já foi selecionada, digite outra opção.")
+                      Senao
+                           esporte()
+                           v1 <- 1
+                      fimse
+                      
+                 caso 2
+                       Se (v2 = 2) entao
+                         escreval("Essa opção já foi selecionada, digite outra opção.")
+                      Senao
+                           entretenimento()
+                           v2 <- 2
+                      fimse
+                 caso 3
+                      Se (v3 = 3) entao
+                         escreval("Essa opção já foi selecionada, digite outra opção.")
+                      Senao
+                           historia()
+                           v3 <- 3
+                      fimse
+                 caso 4
+                      Se (v4 = 4) entao
+                         escreval("Essa opção já foi selecionada, digite outra opção.")
+                      Senao
+                           ciencias()
+                           v4<- 4
+                      fimse
+                 caso 5
+                      Se (v5 = 5) entao
+                         escreval("Essa opção já foi selecionada, digite outra opção.")
+                      Senao
+                           literatura()
+                           v5 <- 5
+                      fimse
+                 caso 9
+                      escreval("Quizz encerrado. Total de pontos: ", pontos)
+                 outrocaso
+                      escreval("Opção inexistente.")
+          fimescolha
+Até menu = 9
+
+
+Fimalgoritmo
