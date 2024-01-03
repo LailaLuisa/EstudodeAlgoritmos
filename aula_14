@@ -1,0 +1,23 @@
+Algoritmo "Algoritmo escolha nomes"
+
+
+Var
+vet: vetor[0..4] de caractere
+
+Inicio
+
+         escreval("Digite 5 nomes:")
+         leia(vet[0])
+         leia(vet[1])
+         leia(vet[2])
+         leia(vet[3])
+         leia(vet[4])
+         
+         limpatela()
+         
+         escreval("Escrita dos 5 nomes digitados:")
+         escreval(vet[0])
+         escreval(vet[1])
+         escreval(vet[2])
+         escreval(vet[3])
+         escreval(vet[4])
