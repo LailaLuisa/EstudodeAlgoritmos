@@ -1,0 +1,230 @@
+Algoritmo "Algoritmo escolha nomes"
+
+procedimento list1()
+inicio
+
+     Para i de 0 até 0 faca
+        f<- i + 1
+        Escreva("Nome", f, ": ")
+        Leia(vetNome[i])
+     FimPara
+     
+     Escreval(" ")
+     Escreval("Escrita dos nomes digitados: ")
+
+     Para i de 0 até 0 faca
+        f <- i  + 1
+        Escreval("Nome", f, ": ", vetNome[i])
+
+     FimPara
+
+fimprocedimento
+
+procedimento list2()
+inicio
+
+     Para i de 0 até 1 faca
+        f<- i + 1
+        Escreva("Nome", f, ": ")
+        Leia(vetNome[i])
+     FimPara
+
+     Escreval(" ")
+     Escreval("Escrita dos nomes digitados: ")
+
+     Para i de 0 até 1 faca
+        f <- i + 1
+        Escreval("Nome", f, ": ", vetNome[i])
+
+     FimPara
+
+fimprocedimento
+
+procedimento list3()
+inicio
+      Para i de 0 até 2 faca
+        f<- i + 1
+        Escreva("Nome", f, ": ")
+        Leia(vetNome[i])
+     FimPara
+
+     Escreval(" ")
+     Escreval("Escrita dos nomes digitados: ")
+
+     Para i de 0 até 2 faca
+        f <- i  + 1
+        Escreval("Nome", f, ": ", vetNome[i])
+
+     FimPara
+     
+fimprocedimento
+
+procedimento list4()
+inicio
+      Para i de 0 até 3 faca
+        f<- i + 1
+        Escreva("Nome", f, ": ")
+        Leia(vetNome[i])
+     FimPara
+
+     Escreval(" ")
+     Escreval("Escrita dos nomes digitados: ")
+
+     Para i de 0 até 3 faca
+        f <- i  + 1
+        Escreval("Nome", f, ": ", vetNome[i])
+
+     FimPara
+fimprocedimento
+
+procedimento list5()
+inicio
+      Para i de 0 até 4 faca
+        f<- i + 1
+        Escreva("Nome", f, ": ")
+        Leia(vetNome[i])
+     FimPara
+
+     Escreval(" ")
+     Escreval("Escrita dos nomes digitados: ")
+
+     Para i de 0 até 4 faca
+        f <- i  + 1
+        Escreval("Nome", f, ": ", vetNome[i])
+
+     FimPara
+fimprocedimento
+
+procedimento list6()
+inicio
+     Para i de 0 até 5 faca
+        f<- i + 1
+        Escreva("Nome", f, ": ")
+        Leia(vetNome[i])
+     FimPara
+
+     Escreval(" ")
+     Escreval("Escrita dos nomes digitados: ")
+
+     Para i de 0 até 5 faca
+        f <- i  + 1
+        Escreval("Nome", f, ": ", vetNome[i])
+
+     FimPara
+fimprocedimento
+
+procedimento list7()
+inicio
+      Para i de 0 até 6 faca
+        f<- i + 1
+        Escreva("Nome", f, ": ")
+        Leia(vetNome[i])
+     FimPara
+
+     Escreval(" ")
+     Escreval("Escrita dos nomes digitados: ")
+
+     Para i de 0 até 6 faca
+        f <- i  + 1
+        Escreval("Nome", f, ": ", vetNome[i])
+
+     FimPara
+fimprocedimento
+
+procedimento list8()
+inicio
+      Para i de 0 até 7 faca
+        f<- i + 1
+        Escreva("Nome", f, ": ")
+        Leia(vetNome[i])
+     FimPara
+
+     Escreval(" ")
+     Escreval("Escrita dos nomes digitados: ")
+
+     Para i de 0 até 7 faca
+        f <- i  + 1
+        Escreval("Nome", f, ": ", vetNome[i])
+
+     FimPara
+fimprocedimento
+
+procedimento list9()
+inicio
+      Para i de 0 até 8 faca
+        f<- i + 1
+        Escreva("Nome", f, ": ")
+        Leia(vetNome[i])
+     FimPara
+
+     Escreval(" ")
+     Escreval("Escrita dos nomes digitados: ")
+
+     Para i de 0 até 8 faca
+        f <- i  + 1
+        Escreval("Nome", f, ": ", vetNome[i])
+
+     FimPara
+fimprocedimento
+
+procedimento list10()
+inicio
+      Para i de 0 até 9 faca
+        f<- i + 1
+        Escreva("Nome", f, ": ")
+        Leia(vetNome[i])
+     FimPara
+
+     Escreval(" ")
+     Escreval("Escrita dos nomes digitados: ")
+
+     Para i de 0 até 9 faca
+        f <- i  + 1
+        Escreval("Nome", f, ": ", vetNome[i])
+
+     FimPara
+fimprocedimento
+
+Var
+vetNome: vetor[0..9] de caractere
+i: inteiro
+f: inteiro
+tam: inteiro
+opcoes: inteiro
+
+Inicio
+
+      Repita
+         escreval("Qual o tamanho da lista? Mínimo 1, máximo 10. Escolha um número ou digite 0 para sair:")
+         leia(opcoes)
+         escolha opcoes
+                 caso 1
+                      list1()
+                 caso 2
+                      list2()
+                 caso 3
+                      list3()
+                 caso 4
+                      list4()
+                 caso 5
+                      list5()
+                 caso 6
+                      list6()
+                 caso 7
+                      list7()
+                 caso 8
+                      list8()
+                 caso 9
+                      list9()
+                 caso 10
+                      list10()
+                 caso 0
+                      escreval("Encerrando Operação.")
+                 outrocaso
+                      escreval("Opção inválida.")
+         fimescolha
+      Ate opcoes =  0
+
+
+
+Fimalgoritmo
